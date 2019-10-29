@@ -18,10 +18,21 @@ function multiplyTwoValues(a,b) {
     return a * b;
 }
 
-function multiply()
+function multiply(...args) {
+    let result = 1;
+
+    for (let i = 0; i < args.length; i++) {
+        result *= args[i];
+    }
+
+    return result;
+}
 
 module.exports  = {
     addTwoValues, 
     add,
-    multiplyTwoValues 
+    multiplyTwoValues,
+    multiply
 };
+
+console.log(multiply(1,2,3,4));
