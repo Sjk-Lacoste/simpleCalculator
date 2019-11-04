@@ -1,9 +1,5 @@
 'use strict';
 
-function addTwoValues(a, b) {
-    return a + b;
-}
-
 function add(...args) {
     let sum = 0;
 
@@ -12,10 +8,6 @@ function add(...args) {
     }
 
     return sum;
-}
-
-function multiplyTwoValues(a,b) {
-    return a * b;
 }
 
 function multiply(...args) {
@@ -29,10 +21,6 @@ function multiply(...args) {
 }
 
 module.exports  = {
-    addTwoValues, 
     add,
-    multiplyTwoValues,
     multiply
 };
-
-console.log(multiply(1,2,3,4));
