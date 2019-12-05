@@ -3,8 +3,9 @@ def add(*params):
     sum = 0
 
     # Loop through values and add with the sum.
-    for x in range(0, len(params)):
-        sum += params[x]
+    # pos is used for position of the value in a list
+    for pos in range(0, len(params)):
+        sum += params[pos]
 
     # Return the results to the user.
     return sum
@@ -14,8 +15,9 @@ def multiply(*params):
     product = 1
 
     # Loop through values and multiply with the product.
-    for x in range(len(params)):
-        product *= params[x]
+    # pos is used for position of the value in a list
+    for pos in range(len(params)):
+        product *= params[pos]
 
     # Return the results to the user.
     return product
